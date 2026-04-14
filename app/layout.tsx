@@ -4,7 +4,7 @@ import Script from 'next/script';
 import { Manrope } from 'next/font/google';
 import "./globals.css";
 import LenisProvider from '@/components/providers/LenisProvider';
-import ThemeProvider from '@/components/providers/ThemeProvider';
+
 import StructuredData from '@/components/seo/StructuredData';
 import { SITE_CONFIG } from '@/lib/config';
 
@@ -85,9 +85,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <StructuredData />
       </head>
       <body suppressHydrationWarning>
-        <ThemeProvider>
-          <LenisProvider>{children}</LenisProvider>
-        </ThemeProvider>
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );

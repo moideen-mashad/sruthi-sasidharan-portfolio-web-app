@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Link as ScrollLink } from 'react-scroll';
 import NavbarToggler from '@/components/ui/NavbarToggler';
-import ThemeToggle from '@/components/ui/ThemeToggle';
+
 import { getUserData } from '@/lib/utils/data';
 import { NAV_ITEMS } from '@/lib/config';
 
@@ -71,14 +71,12 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <div className="flex items-center ml-6 border-l border-slate-100 dark:border-slate-800 pl-6 h-8">
-                <ThemeToggle />
-              </div>
+
             </div>
 
             {/* Mobile toggler */}
             <div className="lg:hidden ml-auto flex items-center gap-3">
-              <ThemeToggle />
+
               <NavbarToggler
                 isOpen={isMobileMenuOpen}
                 onToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Remove-Item -Path ''c:\\\\Users\\\\Moideen Mashad\\\\My media files\\\\MY-FRONTEND-DESIGN\\\\ReactJs\\\\my-profile-web-app\\\\backend'' -Recurse -Force; Remove-Item -Path ''c:\\\\Users\\\\Moideen Mashad\\\\My media files\\\\MY-FRONTEND-DESIGN\\\\ReactJs\\\\my-profile-web-app\\\\frontend'' -Recurse -Force\")"
+    ]
+  }
+}

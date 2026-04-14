@@ -1,0 +1,10 @@
+Contact: mailto:moideenmashad@gmail.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://www.moideenmashad.online/.well-known/security.txt
+Policy: https://www.moideenmashad.online/security-policy
+
+# Security Policy
+# If you discover a security vulnerability, please email security@moideenmashad.tech
+# We appreciate responsible disclosure and will respond promptly.
+

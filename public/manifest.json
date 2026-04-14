@@ -1,0 +1,25 @@
+{
+  "short_name": "Moideen Mashad",
+  "name": "Moideen Mashad - Frontend Developer",
+  "description": "Moideen Mashad is a professional Frontend Developer specializing in React, Next.js, and TypeScript.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/profile.jpg",
+      "sizes": "160x160",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "categories": ["portfolio", "developer", "web"]
+}

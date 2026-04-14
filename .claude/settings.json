@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.tsx$\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''backend'' -Recurse 2>$null | Measure-Object | Select-Object -ExpandProperty Count; Get-ChildItem -Path ''frontend'' -Recurse 2>$null | Measure-Object | Select-Object -ExpandProperty Count\")",
+      "Bash(powershell -Command \"\\(Get-ChildItem -Path ''backend'' -Recurse -ErrorAction SilentlyContinue | Measure-Object\\).Count\")",
+      "Bash(powershell -Command \"\\(Get-ChildItem -Path ''frontend'' -Recurse -ErrorAction SilentlyContinue | Measure-Object\\).Count\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''frontend'' -Recurse -ErrorAction SilentlyContinue | Select-Object FullName\")",
+      "Bash(powershell -Command \"Remove-Item -Path ''backend'',''frontend'',''EMAIL_SETUP_GUIDE.md'',''FOLDER_STRUCTURE.md'',''PROJECT_STRUCTURE.md'',''SECURITY.md'' -Recurse -Force -ErrorAction SilentlyContinue\")",
+      "Bash(powershell -Command \"Remove-Item -Path ''backend'' -Recurse -Force -ErrorAction SilentlyContinue; Remove-Item -Path ''frontend'' -Recurse -Force -ErrorAction SilentlyContinue; Remove-Item ''EMAIL_SETUP_GUIDE.md'',''FOLDER_STRUCTURE.md'',''PROJECT_STRUCTURE.md'',''SECURITY.md'' -Force -ErrorAction SilentlyContinue\")",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm run:*)",
+      "Bash(npm i:*)"
+    ]
+  }
+}

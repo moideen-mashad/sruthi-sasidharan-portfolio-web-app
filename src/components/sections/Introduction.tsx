@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { ReactElement } from 'react';
-import { Linkedin, Github, Mail } from 'lucide-react';
+import { Linkedin, Github, Mail, Download } from 'lucide-react';
 import { getUserData, getFilteredSocialMedia } from '@/lib/utils/data';
 import TechStack from './TechStack';
 import { SocialMediaLink } from '@/types';
@@ -34,7 +34,7 @@ const Introduction = () => {
               <p className="para mb-4 text-color text-base sm:text-lg max-w-xl leading-relaxed">
                 {userData.description}
               </p>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 items-center">
                 <div className="social_media flex flex-wrap gap-3">
                   {heroSocials.map((item: SocialMediaLink) => (
                     <Link
@@ -53,6 +53,15 @@ const Introduction = () => {
                     </Link>
                   ))}
                 </div>
+                <Link
+                  href="/Sruthi-Sasidharan-Resume.pdf"
+                  download="Sruthi-Sasidharan-Resume.pdf"
+                  className="btn_primary flex items-center gap-2 px-5 py-3 text-sm rounded-xl no-underline"
+                  aria-label="Download Sruthi Sasidharan's Resume"
+                >
+                  <Download size={16} />
+                  Resume
+                </Link>
               </div>
             </div>
             <div className="w-full lg:w-1/2 hidden lg:flex justify-end pr-8">

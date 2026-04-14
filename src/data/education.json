@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1",
+    "institution": "SASTRA University",
+    "degree": "Master of Computer Application (MCA)",
+    "period": "2024 - Present",
+    "status": "Pursuing",
+    "location": "Remote"
+  },
+  {
+    "id": "2",
+    "institution": "NRI Institute, Bangalore University",
+    "degree": "Bachelor of Computer Application (BCA)",
+    "period": "2017 - 2020",
+    "status": "Graduated",
+    "grade": "8.05 / 10 CGPA",
+    "location": "Bangalore, India"
+  }
+]

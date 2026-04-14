@@ -1,0 +1,27 @@
+{
+  "name": "Sruthi Sasidharan",
+  "email": "sruthisasidharan1512@gmail.com",
+  "job_role": "Python Django Full Stack Developer",
+  "expirence_year": 3,
+  "description": "Python Full Stack Developer with 3+ years of experience delivering scalable web applications using Python, Django, Django REST Framework, and MySQL. Proven capability in backend development, REST API design, MVT architecture, and database optimization.",
+  "skills": [
+    "Python",
+    "Django",
+    "Django REST Framework",
+    "MySQL",
+    "PostgreSQL",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "AJAX",
+    "Git",
+    "Docker",
+    "RESTful API",
+    "MVT Architecture"
+  ],
+  "user_img": "../Assets/img/profile.jpeg",
+  "about": "Python Full Stack Developer specialized in building scalable, secure web applications using industry-aligned coding standards. Experienced across the full Software Development Life Cycle (SDLC), with a strong focus on code quality, performance optimization, and secure application development.",
+  "project_title": "Core Projects",
+  "project": "Experienced in developing enterprise-grade solutions including Document Management Portals and Extended Warranty Selling Platforms. My projects demonstrate a deep understanding of Python, Django REST Framework, and robust database management.",
+  "connect": "Interested in collaborating or have a question? I'm always open to discussing new projects or opportunities in Python and Full Stack Development. Feel free to reach out and I'll get back to you shortly."
+}

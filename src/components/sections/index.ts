@@ -1,0 +1,11 @@
+export { default as Introduction } from './Introduction';
+export { default as About } from './About';
+export { default as Career } from './Career';
+export { default as Project } from './Project';
+export { default as Contact } from './Contact';
+export { default as ContactForm } from './ContactForm';
+export { default as TechStack } from './TechStack';
+
+export { default as NotFound } from './NotFound';
+export { default as Education } from './Education';
+export { default as Certifications } from './Certifications';

@@ -5,7 +5,7 @@ import { Manrope } from 'next/font/google';
 import "./globals.css";
 import LenisProvider from '@/components/providers/LenisProvider';
 import StructuredData from '@/components/seo/StructuredData';
-import { SITE_CONFIG, ANALYTICS } from '@/lib/config';
+import { SITE_CONFIG } from '@/lib/config';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
-  verification: { google: ANALYTICS.googleAnalyticsId },
+  // verification: { google: ANALYTICS.googleAnalyticsId },
   manifest: '/manifest.json',
   icons: {
     icon: [{ url: '/favicon.ico' }, { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' }],
@@ -80,25 +80,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en" className={manrope.variable}>
       <head>
         <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
-        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
         <StructuredData />
       </head>
       <body suppressHydrationWarning>
         <LenisProvider>{children}</LenisProvider>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS.googleAnalyticsId}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${ANALYTICS.googleAnalyticsId}', { page_path: window.location.pathname });
-          `}
-        </Script>
       </body>
     </html>
   );

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Document Management Portal",
+    "subtitle": "Mane Kancor QA Department",
+    "image": "/projects/document-portal.jpg",
+    "technology_used": ["Python", "Django", "HTML", "CSS", "AJAX", "MySQL"],
+    "description": "Developed a web-based document management platform to streamline organizational workflows and ensure secure document storage/retrieval.",
+    "bullets": [
+      "Developed a web-based document management platform to streamline organizational workflows.",
+      "Implemented modules including Document Management, Supplier Quality Management, Audit Management, Change Management, and Training Management.",
+      "Centralized document repository to ensure secure access, version control, and reduced redundancy.",
+      "Implemented user authentication and role-based access control to enforce data confidentiality.",
+      "Optimized database queries for improved performance and high-volume data handling.",
+      "Enhanced training management functionality to track employee enrollments and progress.",
+      "Collaborated with stakeholders to gather requirements, prioritize features, and deliver business-aligned solutions."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Extended Warranty Selling Platform",
+    "subtitle": "PDigital, Dcare, Gulfown, CM Mobiles",
+    "image": "/projects/warranty-platform.jpg",
+    "technology_used": ["Python", "Django", "Django REST Framework (DRF)", "MySQL", "Docker"],
+    "description": "Developed a full-featured platform to manage and sell extended warranty plans for electronic products across multiple retail partners.",
+    "bullets": [
+      "Developed a full-featured platform to manage and sell extended warranty plans for electronic products.",
+      "Designed a secure backend architecture using Python and Django with efficient MySQL integration.",
+      "Built RESTful APIs to enable seamless integration with mobile applications.",
+      "Implemented Docker containers to standardize development environments and manage dependencies efficiently.",
+      "Ensured data integrity, application security, and scalability across platforms."
+    ]
+  }
+]

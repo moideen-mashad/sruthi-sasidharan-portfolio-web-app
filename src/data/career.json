@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "companyName": "Datahub Technologies R&D Pvt Ltd",
+    "companyWebsite": "https://datahubtechnologies.com/",
+    "role": "Python Django Full Stack Developer",
+    "startDate": "2022-01-01",
+    "endDate": "2025-10-31",
+    "isCurrent": false,
+    "description": "Developed scalable web applications using Python and Django following best coding practices. Implemented MVT architecture and designed RESTful APIs for enterprise-level products.",
+    "bullets": [
+      "Developed scalable web applications using Python and Django following best coding practices.",
+      "Implemented Model View Template (MVT) architecture to ensure modular, maintainable codebases.",
+      "Designed and developed RESTful APIs to support web and mobile application integrations.",
+      "Utilized Django ORM for efficient database interactions and clean data modeling.",
+      "Enhanced frontend responsiveness using AJAX, reducing page load times and improving user experience.",
+      "Optimized MySQL queries to improve performance and handle large-scale datasets.",
+      "Collaborated with UI/UX designers and frontend developers to deliver seamless user experiences.",
+      "Managed source code using Git, supporting version control and collaborative development.",
+      "Contributed to enterprise software products including AMSTIN and Mobpro."
+    ],
+    "location": "Kochi, Kerala",
+    "type": "work",
+    "order": 0
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "LinkedIn",
+    "LinkTo": "https://www.linkedin.com/in/sruthi-sasidharan-8a2b40212/",
+    "iconId": "linkedin"
+  },
+  {
+    "title": "GitHub",
+    "LinkTo": "https://github.com/SruthiSasidharan",
+    "iconId": "github"
+  },
+  {
+    "title": "Email",
+    "LinkTo": "mailto:sruthisasidharan1512@gmail.com",
+    "iconId": "email"
+  },
+  {
+    "title": "Instagram",
+    "LinkTo": "https://www.instagram.com/___sruthiii_?igsh=djE5aWlsOGhxc3Jy",
+    "iconId": "instagram"
+  }
+]

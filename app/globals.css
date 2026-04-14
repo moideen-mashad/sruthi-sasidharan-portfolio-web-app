@@ -44,12 +44,14 @@
 }
 
 @layer components {
-  /* Typography */
-  .text-color { @apply text-slate-900; }
-  .title { @apply font-bold tracking-tight text-slate-900; }
-  .sub_title { @apply text-3xl font-bold tracking-tight text-slate-900; }
-  .category_title { @apply text-xl font-medium tracking-wide text-slate-700; }
-  .para { @apply text-slate-600 leading-relaxed; }
+  /* Typography System */
+  .section-title { @apply text-3xl sm:text-4xl font-bold tracking-tight text-slate-900; }
+  .item-title { @apply text-xl lg:text-2xl font-bold tracking-tight text-slate-900; }
+  .description-text { @apply text-base text-black leading-relaxed; }
+  .badge-base { @apply px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest; }
+  .sub-heading { @apply text-xs font-black uppercase tracking-[0.2em] text-slate-300; }
+  .para { @apply text-base text-black leading-relaxed; }
+  .sub_title { @apply text-3xl sm:text-4xl font-bold tracking-tight text-slate-900; }
 
   /* Buttons */
   .btn_base {
@@ -91,33 +93,24 @@
 
   /* Cards */
   .premium-card {
-    @apply bg-white rounded-2xl border border-slate-100 transition-all duration-300;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
-    &:hover { @apply border-slate-200 shadow-md -translate-y-1; }
+    @apply bg-white rounded-3xl border border-black transition-all duration-500;
+    box-shadow: 0 4px 15px -4px rgba(0,0,0,0.04);
+    &:hover { @apply border-black shadow-xl -translate-y-1; }
   }
   .premium-shadow {
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.03);
   }
   .project-card {
-    @apply bg-white rounded-3xl overflow-hidden border border-slate-100 transition-all duration-500 h-full flex flex-col;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
-    &:hover { @apply border-slate-200 -translate-y-2; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05); }
-  }
-  .project-card-image-wrapper { @apply relative aspect-[16/10] overflow-hidden bg-slate-50; }
-  .project-card-image { @apply w-full h-full object-cover transition-transform duration-700 hover:scale-110; }
-  .project-card-overlay {
-    @apply absolute inset-0 bg-black/40 backdrop-blur-sm opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center;
-  }
-  .project-card-overlay-link {
-    @apply w-14 h-14 bg-white text-black rounded-full flex items-center justify-center shadow-xl hover:scale-110 hover:bg-black hover:text-white transition-all duration-300;
+    @apply bg-white rounded-3xl border border-slate-100 transition-all duration-500 flex flex-col h-full overflow-hidden;
+    box-shadow: 0 4px 15px -4px rgba(0,0,0,0.04);
+    &:hover { @apply border-black shadow-xl -translate-y-1; }
   }
   .project-card-body { @apply p-6 lg:p-8 flex-1 flex flex-col; }
-  .project-card-info { @apply mb-6; }
-  .project-card-title { @apply text-xl font-bold mb-2 tracking-tight; }
-  .project-card-description { @apply text-sm opacity-70 leading-relaxed line-clamp-3; }
-  .project-card-footer { @apply mt-auto pt-6 border-t border-black/5; }
-  .project-card-tech { @apply flex flex-wrap gap-2 mb-6; }
-  .project-tech-badge { @apply px-3 py-1 bg-black/5 text-black/80 rounded-full text-[10px] font-bold uppercase tracking-wider transition-colors hover:bg-black hover:text-white; }
+  .project-card-title { @apply text-xl lg:text-2xl font-bold tracking-tight text-slate-900 mb-3; }
+  .project-card-description { @apply text-base text-black leading-relaxed line-clamp-3; }
+  .project-card-footer { @apply mt-auto pt-5 border-t border-slate-50; }
+  .project-card-tech { @apply flex flex-wrap gap-2 mb-8; }
+  .project-tech-badge { @apply px-4 py-1.5 bg-slate-50 text-slate-500 rounded-lg text-[10px] font-bold uppercase tracking-wider transition-colors hover:bg-black hover:text-white; }
   .project-card-actions { @apply flex gap-3; }
   .project-card-btn { @apply flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-black text-white font-semibold text-sm transition-all hover:bg-slate-900 active:scale-95 no-underline; }
   .project-card-btn-icon { @apply w-12 h-12 flex items-center justify-center rounded-xl border border-black/10 hover:border-black hover:bg-black/5 transition-all active:scale-95 no-underline; }
@@ -136,17 +129,6 @@
   }
   .nav-link.active .nav-link-indicator { @apply scale-x-100; }
 
-  /* Navbar toggler */
-  .navbar-toggler-custom {
-    @apply relative w-8 h-6 flex flex-col justify-between cursor-pointer bg-transparent border-none p-0;
-  }
-  .navbar-toggler-line {
-    @apply block w-full h-0.5 bg-slate-900 transition-all duration-300 origin-center;
-  }
-  .navbar-toggler-custom.is-open .navbar-toggler-line-1 { @apply rotate-45 translate-y-2.5; }
-  .navbar-toggler-custom.is-open .navbar-toggler-line-2 { @apply opacity-0 scale-x-0; }
-  .navbar-toggler-custom.is-open .navbar-toggler-line-3 { @apply -rotate-45 -translate-y-2.5; }
-
   /* Social media icon */
   .social_media_icon { @apply text-slate-600 hover:text-slate-900 transition-colors; }
 
@@ -159,23 +141,29 @@
   /* Profile image */
   .profile-feature-image { @apply grayscale hover:grayscale-0 transition-all duration-700; }
   .introduction-image-container { @apply relative; }
-
-  /* Career section */
-  .career_bg { @apply bg-white; }
-
-  /* Contact card */
-  .contact_card_bg { @apply bg-white rounded-3xl border border-slate-100 shadow-sm; }
-
-  /* Swiper overrides */
-  .project-swiper-wrapper { @apply w-full; }
-  .project-swiper { @apply w-full pb-12; }
 }
 
 body {
   @apply selection:bg-slate-900 selection:text-white;
 }
 
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { @apply bg-slate-200 rounded-full; }
+::-webkit-scrollbar-thumb { @apply bg-slate-200 rounded-full border-2 border-transparent bg-clip-padding; }
 ::-webkit-scrollbar-thumb:hover { @apply bg-slate-300; }
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  @apply bg-slate-400/50 rounded-full border-2 border-transparent bg-clip-padding;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
+
+.overflow-y-auto {
+  scrollbar-gutter: stable;
+}
+
+

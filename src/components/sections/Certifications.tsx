@@ -22,25 +22,29 @@ const Certifications = () => {
 
           <div className="grid gap-6">
             {certifications.map((cert) => (
-              <div key={cert.id} className="premium-card p-6 lg:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-8 cursor-pointer group">
-                <div className="flex items-start gap-5">
-                  <div className="p-4 bg-slate-50 rounded-2xl shrink-0 group-hover:bg-black group-hover:text-white transition-all">
-                    <Award size={24} />
+              <div key={cert.id} className="premium-card p-6 lg:p-8 flex flex-col md:flex-row md:items-start justify-between gap-6 md:gap-8 cursor-pointer group">
+                <div className="flex items-start gap-4 lg:gap-5 flex-1 min-w-0">
+                  <div className="p-3.5 lg:p-4 bg-slate-50 rounded-2xl shrink-0 group-hover:bg-black group-hover:text-white transition-all shadow-sm">
+                    <Award size={20} className="md:w-6 md:h-6" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg lg:text-xl font-black tracking-tight text-black mb-1 leading-tight truncate">{cert.title}</h3>
-                    <p className="text-[11px] font-black uppercase tracking-[0.25em] text-slate-400">{cert.issuer}</p>
+                    <h3 className="text-lg lg:text-xl font-black tracking-tight text-black mb-1 leading-tight break-words">
+                      {cert.title}
+                    </h3>
+                    <p className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.25em] text-slate-400">
+                      {cert.issuer}
+                    </p>
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-8 text-[11px] font-bold text-slate-400 sm:text-right border-t sm:border-t-0 sm:border-l border-slate-50 pt-6 sm:pt-0 sm:pl-8">
-                  <div className="flex items-center gap-2 sm:justify-end">
-                    <Calendar size={16} className="text-slate-300" />
-                    <span>{cert.date}</span>
+                <div className="flex flex-row md:flex-col flex-wrap gap-x-6 gap-y-2 text-[10px] md:text-[11px] font-bold text-slate-400 md:text-right border-t md:border-t-0 md:border-l border-slate-50 pt-6 md:pt-0 md:pl-8 shrink-0">
+                  <div className="flex items-center gap-2 md:justify-end">
+                    <Calendar size={14} className="text-slate-300 md:w-4 md:h-4" />
+                    <span className="whitespace-nowrap uppercase tracking-wider">{cert.date}</span>
                   </div>
-                  <div className="flex items-center gap-2 sm:justify-end">
-                    <MapPin size={16} className="text-slate-300" />
-                    <span>{cert.location}</span>
+                  <div className="flex items-center gap-2 md:justify-end">
+                    <MapPin size={14} className="text-slate-300 md:w-4 md:h-4" />
+                    <span className="whitespace-nowrap uppercase tracking-wider">{cert.location}</span>
                   </div>
                 </div>
               </div>

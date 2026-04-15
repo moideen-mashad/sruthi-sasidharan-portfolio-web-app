@@ -105,9 +105,9 @@ const Navbar = () => {
               <Image
                 src="/profile.jpeg"
                 alt={userData.name}
-                width={32}
-                height={32}
-                className="rounded-full border border-slate-200"
+                width={36}
+                height={36}
+                className="rounded-full aspect-square object-cover border-2 border-slate-200 shadow-sm"
               />
               <span className="font-bold text-slate-900">{userData.name}</span>
             </div>

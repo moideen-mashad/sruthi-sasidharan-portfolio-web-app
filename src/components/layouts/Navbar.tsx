@@ -86,30 +86,31 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 pt-4 pb-4 border-t border-black/5 bg-white shadow-lg rounded-b-xl animate-in slide-in-from-top-4 duration-300">
-            <div className="container mx-auto px-4">
+        <div className={`lg:hidden overflow-hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-[500px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+          <div className="container mx-auto px-4 pb-6">
+            <div className="bg-white border border-slate-100 rounded-2xl shadow-xl p-2">
               <ul className="flex flex-col gap-1 list-none pl-0 mb-0">
                 {NAV_ITEMS.map((item) => (
-                  <li key={item.LinkTo} className={item.className}>
+                  <li key={item.LinkTo}>
                     <ScrollLink
                       to={item.LinkTo}
                       smooth
                       duration={500}
                       spy
-                      activeClass="active"
-                      className="nav-link block px-4 py-3 rounded-lg text-center font-medium no-underline"
+                      activeClass="!bg-slate-900 !text-white"
+                      className="nav-link flex items-center px-4 py-3 rounded-xl font-semibold text-slate-600 hover:bg-slate-50 transition-all no-underline cursor-pointer"
                       aria-label={`Navigate to ${item.navitem} section`}
                       onClick={handleNavClick}
                     >
-                      <span className="nav-link-text">{item.navitem}</span>
+                      <span className="flex-1">{item.navitem}</span>
+                      <div className="w-1.5 h-1.5 rounded-full bg-slate-200" />
                     </ScrollLink>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-        )}
+        </div>
       </nav>
     </div>
   );
